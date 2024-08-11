@@ -1,0 +1,32 @@
+* {
+	margin:0;
+	padding:0;
+}
+html,body {
+	background:#111;
+	color:#FFF;
+
+	font-family:Arial, sans-serif;
+}
+p {
+	margin:10px;
+}
+p.code {
+	border-radius:10px;
+	background:#222;
+
+	margin:10px;
+	padding:5px;
+}
+a {
+	color:lightblue;
+}
+.content {
+	margin:5px;	
+}
+header {
+	text-align:center;
+
+	width:100%;
+	height:100%;
+}

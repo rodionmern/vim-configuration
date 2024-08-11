@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="urf-8">
+		<link href="./static/style/index.css" rel="stylesheet">
+		<link href="./static/image/favicon.png" rel="icon">
+		<title>Vim configuration</title>
+	</head>
+	<body>
+		<div class="content">
+			<header class="header">
+				<h1>Конфигурация Vim</h1>
+			</header>
+			<div class="main">
+				<div class="installation">
+					<h2>Установка Vim</h2>
+					<p class="code">sudo apt install vim</p>
+					<p class="code">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</p>
+				</div>
+				<div class="base-configuration">
+					<h2>Базовая конфигурация</h2>
+					<p>В начале создайте конфиг:</p>
+					<p class="code">touch ~/.vimrc</p>
+					<p>Отлично! Теперь начните его редактировать через сам Vim:</p>
+					<p class="code">vim ~/.vimrc</p>
+					<p>Изначально вам необходимо прописать отображение синтаксиса:</p>
+					<p class="code">syntax on</p>
+					<p>И поставьте кодировку:</p>
+					<p class="code">set encoding=utf8</p>
+					<p>Ниже есть ещё интересные настройки:</p>
+					<p class="code">set mouse=a " Мышка<br>set number " Показ чисел<br>set relativenumber " В обратной последовательсти<br>set tabstop=2<br>set shiftwidth=2 " Количество пробелов в табе<br>set clipboard=unnamed " Системный буфер обмена<br>set cursorline " Горизонтальное выделение текста, также есть вертикальное (set cursorcolumn)<br>set nocompatible " Отключить поддержку с Vi</p>
+				</div>
+				<div class="plugins-installation">
+					<h2>Установка плагинов</h2>
+					<p>Так же можете установить различные плагины с помощью Vim-Plug:</p>
+					<p class="code">call plug#begin()<br>  Plug 'preservim/nerdtree'<br>call plug#end()
+					</p>
+					<p>Различные плагины можно найти <a href="https://vimawesome.com">здесь</a></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
